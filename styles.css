@@ -718,6 +718,54 @@ a {
   color: var(--wine);
 }
 
+.section-song {
+  text-align: center;
+}
+
+.song-inner {
+  width: min(36rem, calc(100% - 3rem));
+}
+
+.song-inner .eyebrow {
+  justify-content: center;
+}
+
+.song-inner h2 {
+  margin-bottom: 1rem;
+}
+
+.song-inner p {
+  margin-inline: auto;
+  max-width: 34rem;
+}
+
+.verse {
+  margin: 1.75rem auto 0;
+  max-width: 22rem;
+  padding: 1.35rem 1.25rem 1.2rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 252, 247, 0.45);
+}
+
+.verse p {
+  margin: 0;
+  max-width: none;
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.35rem, 2.5vw, 1.7rem);
+  line-height: 1.55;
+  color: var(--wine-deep);
+}
+
+.song-note {
+  margin: 0.85rem auto 0;
+  max-width: 32rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
 .reserve {
   background:
     radial-gradient(ellipse at 50% 0%, rgba(212, 181, 122, 0.14), transparent 55%),
@@ -884,7 +932,8 @@ html[lang="es"] .section-how h2 {
 @media (max-width: 560px) {
   .wrap,
   .glance ul,
-  .story-inner {
+  .story-inner,
+  .song-inner {
     width: min(1120px, calc(100% - 2rem));
   }
 
