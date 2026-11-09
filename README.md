@@ -2,7 +2,7 @@
 
 Static one-page website for Cakes by Doña Lourdes, a homemade, special-order Dominican cake brand. Delivery and shipping only. No storefront. One cake: a media libra bizcocho that arrives fully assembled in a lidded gold tin.
 
-Custom domain: https://cakesbydonalourdes.salimheyaime.com
+Custom domain: https://cakesbylourdes.salimheyaime.com
 
 ## DNS
 
@@ -10,9 +10,9 @@ The owner adds this record himself. This repository does not change live DNS.
 
 On the DNS zone for `salimheyaime.com`:
 
-| Type  | Host               | Value                      |
-| ----- | ------------------ | -------------------------- |
-| CNAME | cakesbydonalourdes | sosacleans-pixel.github.io |
+| Type  | Host           | Value                      |
+| ----- | -------------- | -------------------------- |
+| CNAME | cakesbylourdes | sosacleans-pixel.github.io |
 
 ## GitHub Pages
 
