@@ -246,6 +246,14 @@
         <p class="eyebrow">The birthday</p>
         <h2 id="song-title" lang="es">Cumpleaños feliz</h2>
         <p>In a Dominican home, the cake comes out, the candles are lit, and everyone sings <em lang="es">Cumpleaños feliz</em>.</p>
+        <button type="button" class="song-play" aria-pressed="false" aria-controls="birthday-audio" data-pause-label="Pause">
+          <span class="song-play-mark" aria-hidden="true"></span>
+          <span class="song-play-label">Play the song</span>
+        </button>
+        <audio id="birthday-audio" preload="none">
+          <source src="assets/cumpleanos-feliz.ogg" type="audio/ogg">
+          <source src="assets/cumpleanos-feliz.mp3" type="audio/mpeg">
+        </audio>
         <blockquote class="verse" lang="es">
           <p>Cumpleaños feliz,<br>te deseamos a ti,<br>cumpleaños feliz,<br>que los cumplas feliz.</p>
         </blockquote>

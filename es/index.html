@@ -246,6 +246,14 @@
         <p class="eyebrow">El cumpleaños</p>
         <h2 id="song-title">Cumpleaños feliz</h2>
         <p>En una casa dominicana sale el bizcocho, se prenden las velas, y todos cantan <em>Cumpleaños feliz</em>.</p>
+        <button type="button" class="song-play" aria-pressed="false" aria-controls="birthday-audio" data-pause-label="Pausa">
+          <span class="song-play-mark" aria-hidden="true"></span>
+          <span class="song-play-label">Escuchar la canción</span>
+        </button>
+        <audio id="birthday-audio" preload="none">
+          <source src="../assets/cumpleanos-feliz.ogg" type="audio/ogg">
+          <source src="../assets/cumpleanos-feliz.mp3" type="audio/mpeg">
+        </audio>
         <blockquote class="verse">
           <p>Cumpleaños feliz,<br>te deseamos a ti,<br>cumpleaños feliz,<br>que los cumplas feliz.</p>
         </blockquote>
