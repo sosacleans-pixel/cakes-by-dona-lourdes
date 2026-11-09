@@ -4,6 +4,9 @@ Static one-page website for Cakes by Doña Lourdes, a homemade, special-order Do
 
 Custom domain: https://cakesbylourdes.salimheyaime.com
 
+English: https://cakesbylourdes.salimheyaime.com/
+Español: https://cakesbylourdes.salimheyaime.com/es/
+
 ## DNS
 
 The owner adds this record himself. This repository does not change live DNS.
