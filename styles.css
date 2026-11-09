@@ -766,6 +766,22 @@ a {
   color: var(--muted);
 }
 
+.song-also {
+  margin-top: 2.5rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--line);
+}
+
+.song-also h3 {
+  margin: 0 0 0.8rem;
+  font-size: clamp(1.65rem, 3vw, 2.1rem);
+}
+
+.song-also p {
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
 .song-play {
   display: inline-flex;
   align-items: center;
