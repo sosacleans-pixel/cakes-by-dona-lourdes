@@ -64,6 +64,7 @@
         <a href="#cake">El bizcocho</a>
         <a href="#how">Cómo funciona</a>
         <a href="#story">Sobre Lourdes</a>
+        <a href="#birthday-songs">Canciones de cumpleaños</a>
         <a href="#reserve">Reservar</a>
       </nav>
     </div>
@@ -241,26 +242,50 @@
       </div>
     </section>
 
-    <section id="song" class="section section-song" aria-labelledby="song-title">
+    <section id="birthday-songs" class="section section-song" aria-labelledby="songs-title">
+      <div id="song"></div>
       <div class="wrap song-inner">
         <p class="eyebrow">El cumpleaños</p>
-        <h2 id="song-title">Cumpleaños feliz</h2>
-        <p>En una casa dominicana sale el bizcocho, se prenden las velas, y todos cantan <em>Cumpleaños feliz</em>.</p>
-        <button type="button" class="song-play" aria-pressed="false" aria-controls="birthday-audio" data-pause-label="Pausa">
-          <span class="song-play-mark" aria-hidden="true"></span>
-          <span class="song-play-label">Escuchar la canción</span>
-        </button>
-        <audio id="birthday-audio" preload="none">
-          <source src="../assets/cumpleanos-feliz.ogg" type="audio/ogg">
-          <source src="../assets/cumpleanos-feliz.mp3" type="audio/mpeg">
-        </audio>
-        <blockquote class="verse">
-          <p>Cumpleaños feliz,<br>te deseamos a ti,<br>cumpleaños feliz,<br>que los cumplas feliz.</p>
-        </blockquote>
-        <p class="song-note">Se canta con una melodía escrita en 1893 por las hermanas Mildred y Patty Hill, primero como una canción escolar llamada <em lang="en">Good Morning to All</em>.</p>
-        <div class="song-also">
-          <h3>Celebro tu cumpleaños</h3>
-          <p>Muchas familias dominicanas también cantan <em>El Regalo Mejor</em>, conocido por su primer verso: <em>“Celebro tu cumpleaños, tan pronto vi asomar el sol.”</em> El profesor dominicano Ramón Rafael Casado Soler escribió la letra y la música en 1958. Una historia popular dice que la compuso en la cárcel de La Victoria durante la dictadura de Trujillo, pero su sobrino ha dicho que la escribió antes y que solo se hizo popular allí. Hoy es la canción de cumpleaños dominicana.</p>
+        <h2 id="songs-title">Canciones de cumpleaños</h2>
+        <div class="song-list">
+          <article class="song-card">
+            <h3>Cumpleaños feliz</h3>
+            <p>En una casa dominicana sale el bizcocho, se prenden las velas, y todos cantan <em>Cumpleaños feliz</em>.</p>
+            <button type="button" class="song-play" aria-pressed="false" aria-controls="birthday-audio" data-pause-label="Pausa">
+              <span class="song-play-mark" aria-hidden="true"></span>
+              <span class="song-play-label">Escuchar la canción</span>
+            </button>
+            <audio id="birthday-audio" preload="none">
+              <source src="../assets/cumpleanos-feliz.ogg" type="audio/ogg">
+              <source src="../assets/cumpleanos-feliz.mp3" type="audio/mpeg">
+            </audio>
+            <blockquote class="verse">
+              <p>Cumpleaños feliz,<br>te deseamos a ti,<br>cumpleaños feliz,<br>que los cumplas feliz.</p>
+            </blockquote>
+            <p class="song-note">Se canta con una melodía escrita en 1893 por las hermanas Mildred y Patty Hill, primero como una canción escolar llamada <em lang="en">Good Morning to All</em>.</p>
+          </article>
+          <article class="song-card">
+            <h3 lang="en">Happy Birthday</h3>
+            <p>La misma melodía de 1893 de las hermanas Hill, cantada en inglés.</p>
+            <button type="button" class="song-play" aria-pressed="false" aria-controls="happy-audio" data-pause-label="Pausa">
+              <span class="song-play-mark" aria-hidden="true"></span>
+              <span class="song-play-label">Escuchar Happy Birthday</span>
+            </button>
+            <audio id="happy-audio" preload="none">
+              <source src="../assets/cumpleanos-feliz.ogg" type="audio/ogg">
+              <source src="../assets/cumpleanos-feliz.mp3" type="audio/mpeg">
+            </audio>
+            <blockquote class="verse" lang="en">
+              <p>Happy birthday to you,<br>Happy birthday to you,<br>Happy birthday to you,<br>Happy birthday to you.</p>
+            </blockquote>
+          </article>
+          <article class="song-card">
+            <h3>Celebro tu cumpleaños</h3>
+            <p>Muchas familias dominicanas también cantan <em>El Regalo Mejor</em>, conocido por su primer verso: <em>“Celebro tu cumpleaños, tan pronto vi asomar el sol.”</em> El profesor dominicano Ramón Rafael Casado Soler escribió la letra y la música en 1958. Una historia popular dice que la compuso en la cárcel de La Victoria durante la dictadura de Trujillo, pero su sobrino ha dicho que la escribió antes y que solo se hizo popular allí. Hoy es la canción de cumpleaños dominicana.</p>
+            <p class="song-action">
+              <a class="song-link" href="https://www.youtube.com/results?search_query=Celebro+tu+cumplea%C3%B1os+El+Regalo+Mejor" target="_blank" rel="noopener">Escuchar en YouTube<span class="sr-only"> (se abre en una pestaña nueva)</span></a>
+            </p>
+          </article>
         </div>
       </div>
     </section>

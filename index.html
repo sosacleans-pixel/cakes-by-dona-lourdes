@@ -64,6 +64,7 @@
         <a href="#cake">The Cake</a>
         <a href="#how">How It Works</a>
         <a href="#story">About</a>
+        <a href="#birthday-songs">Birthday songs</a>
         <a href="#reserve">Reserve</a>
       </nav>
     </div>
@@ -241,26 +242,50 @@
       </div>
     </section>
 
-    <section id="song" class="section section-song" aria-labelledby="song-title">
+    <section id="birthday-songs" class="section section-song" aria-labelledby="songs-title">
+      <div id="song"></div>
       <div class="wrap song-inner">
         <p class="eyebrow">The birthday</p>
-        <h2 id="song-title" lang="es">Cumpleaños feliz</h2>
-        <p>In a Dominican home, the cake comes out, the candles are lit, and everyone sings <em lang="es">Cumpleaños feliz</em>.</p>
-        <button type="button" class="song-play" aria-pressed="false" aria-controls="birthday-audio" data-pause-label="Pause">
-          <span class="song-play-mark" aria-hidden="true"></span>
-          <span class="song-play-label">Play the song</span>
-        </button>
-        <audio id="birthday-audio" preload="none">
-          <source src="assets/cumpleanos-feliz.ogg" type="audio/ogg">
-          <source src="assets/cumpleanos-feliz.mp3" type="audio/mpeg">
-        </audio>
-        <blockquote class="verse" lang="es">
-          <p>Cumpleaños feliz,<br>te deseamos a ti,<br>cumpleaños feliz,<br>que los cumplas feliz.</p>
-        </blockquote>
-        <p class="song-note">Sung to a melody written in 1893 by sisters Mildred and Patty Hill, first as a classroom song called <em lang="en">Good Morning to All</em>.</p>
-        <div class="song-also">
-          <h3 lang="es">Celebro tu cumpleaños</h3>
-          <p>Many Dominican families also sing <em lang="es">El Regalo Mejor</em>, better known by its opening line, <em lang="es">“Celebro tu cumpleaños, tan pronto vi asomar el sol.”</em> Dominican professor Ramón Rafael Casado Soler wrote the words and music in 1958. A popular story says he wrote it in La Victoria prison under Trujillo, but his nephew has said it was written before then and only became popular there. Today it is the Dominican birthday song.</p>
+        <h2 id="songs-title">Birthday songs</h2>
+        <div class="song-list">
+          <article class="song-card">
+            <h3 lang="es">Cumpleaños feliz</h3>
+            <p>In a Dominican home, the cake comes out, the candles are lit, and everyone sings <em lang="es">Cumpleaños feliz</em>.</p>
+            <button type="button" class="song-play" aria-pressed="false" aria-controls="birthday-audio" data-pause-label="Pause">
+              <span class="song-play-mark" aria-hidden="true"></span>
+              <span class="song-play-label">Play the song</span>
+            </button>
+            <audio id="birthday-audio" preload="none">
+              <source src="assets/cumpleanos-feliz.ogg" type="audio/ogg">
+              <source src="assets/cumpleanos-feliz.mp3" type="audio/mpeg">
+            </audio>
+            <blockquote class="verse" lang="es">
+              <p>Cumpleaños feliz,<br>te deseamos a ti,<br>cumpleaños feliz,<br>que los cumplas feliz.</p>
+            </blockquote>
+            <p class="song-note">Sung to a melody written in 1893 by sisters Mildred and Patty Hill, first as a classroom song called <em lang="en">Good Morning to All</em>.</p>
+          </article>
+          <article class="song-card">
+            <h3 lang="en">Happy Birthday</h3>
+            <p>The same 1893 Hill sisters melody, sung in English.</p>
+            <button type="button" class="song-play" aria-pressed="false" aria-controls="happy-audio" data-pause-label="Pause">
+              <span class="song-play-mark" aria-hidden="true"></span>
+              <span class="song-play-label">Play Happy Birthday</span>
+            </button>
+            <audio id="happy-audio" preload="none">
+              <source src="assets/cumpleanos-feliz.ogg" type="audio/ogg">
+              <source src="assets/cumpleanos-feliz.mp3" type="audio/mpeg">
+            </audio>
+            <blockquote class="verse" lang="en">
+              <p>Happy birthday to you,<br>Happy birthday to you,<br>Happy birthday to you,<br>Happy birthday to you.</p>
+            </blockquote>
+          </article>
+          <article class="song-card">
+            <h3 lang="es">Celebro tu cumpleaños</h3>
+            <p>Many Dominican families also sing <em lang="es">El Regalo Mejor</em>, better known by its opening line, <em lang="es">“Celebro tu cumpleaños, tan pronto vi asomar el sol.”</em> Dominican professor Ramón Rafael Casado Soler wrote the words and music in 1958. A popular story says he wrote it in La Victoria prison under Trujillo, but his nephew has said it was written before then and only became popular there. Today it is the Dominican birthday song.</p>
+            <p class="song-action">
+              <a class="song-link" href="https://www.youtube.com/results?search_query=Celebro+tu+cumplea%C3%B1os+El+Regalo+Mejor" target="_blank" rel="noopener">Listen on YouTube<span class="sr-only"> (opens in a new tab)</span></a>
+            </p>
+          </article>
         </div>
       </div>
     </section>

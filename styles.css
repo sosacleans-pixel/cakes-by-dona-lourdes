@@ -723,7 +723,7 @@ a {
 }
 
 .song-inner {
-  width: min(36rem, calc(100% - 3rem));
+  width: min(42rem, calc(100% - 3rem));
 }
 
 .song-inner .eyebrow {
@@ -766,28 +766,49 @@ a {
   color: var(--muted);
 }
 
-.song-also {
-  margin-top: 2.5rem;
-  padding-top: 1.6rem;
-  border-top: 1px solid var(--line);
+#song {
+  display: block;
+  height: 0;
+  overflow: hidden;
 }
 
-.song-also h3 {
-  margin: 0 0 0.8rem;
-  font-size: clamp(1.65rem, 3vw, 2.1rem);
+.song-list {
+  display: grid;
+  gap: 1.15rem;
+  margin-top: 1.6rem;
 }
 
-.song-also p {
+.song-card {
+  border: 1px solid var(--line);
+  background: rgba(255, 252, 247, 0.5);
+  padding: 1.25rem 1.15rem 1.35rem;
+}
+
+.song-card h3 {
+  margin: 0 0 0.65rem;
+  font-size: clamp(1.55rem, 3vw, 1.95rem);
+}
+
+.song-card p {
+  max-width: none;
   font-size: 1.02rem;
-  line-height: 1.7;
 }
 
-.song-play {
+.song-card .verse {
+  margin-top: 1.1rem;
+}
+
+.song-card .song-note {
+  margin-top: 0.85rem;
+}
+
+.song-play,
+.song-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.7rem;
-  margin: 1.35rem auto 0;
+  margin: 1.15rem auto 0;
   min-height: 3rem;
   padding: 0.7rem 1.15rem;
   border: 1px solid var(--wine);
@@ -796,11 +817,13 @@ a {
   font-family: var(--sans);
   font-size: 0.78rem;
   font-weight: 500;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
+  text-decoration: none;
   cursor: pointer;
 }
 
-.song-play:hover {
+.song-play:hover,
+.song-link:hover {
   background: var(--wine);
   color: var(--cream);
 }

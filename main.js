@@ -49,33 +49,45 @@
 })();
 
 (function () {
-  var button = document.querySelector(".song-play");
-  var audio = document.querySelector("#birthday-audio");
-  if (!button || !audio) return;
+  var buttons = document.querySelectorAll(".song-play");
+  if (!buttons.length) return;
 
-  var label = button.querySelector(".song-play-label");
-  var playText = label ? label.textContent : "";
-  var pauseText = button.getAttribute("data-pause-label") || "Pause";
+  var players = [];
 
-  function setPlaying(playing) {
-    button.setAttribute("aria-pressed", playing ? "true" : "false");
-    button.classList.toggle("is-playing", playing);
-    if (label) label.textContent = playing ? pauseText : playText;
-  }
+  Array.prototype.forEach.call(buttons, function (button) {
+    var audioId = button.getAttribute("aria-controls");
+    var audio = audioId ? document.getElementById(audioId) : null;
+    if (!audio) return;
 
-  button.addEventListener("click", function () {
-    if (audio.paused) {
-      var pending = audio.play();
-      if (pending && pending.catch) pending.catch(function () {});
-    } else {
-      audio.pause();
+    var label = button.querySelector(".song-play-label");
+    var playText = label ? label.textContent : "";
+    var pauseText = button.getAttribute("data-pause-label") || "Pause";
+
+    function setPlaying(playing) {
+      button.setAttribute("aria-pressed", playing ? "true" : "false");
+      button.classList.toggle("is-playing", playing);
+      if (label) label.textContent = playing ? pauseText : playText;
     }
-  });
 
-  audio.addEventListener("play", function () { setPlaying(true); });
-  audio.addEventListener("pause", function () { setPlaying(false); });
-  audio.addEventListener("ended", function () {
-    audio.currentTime = 0;
-    setPlaying(false);
+    button.addEventListener("click", function () {
+      if (audio.paused) {
+        players.forEach(function (other) {
+          if (other !== audio && !other.paused) other.pause();
+        });
+        var pending = audio.play();
+        if (pending && pending.catch) pending.catch(function () {});
+      } else {
+        audio.pause();
+      }
+    });
+
+    audio.addEventListener("play", function () { setPlaying(true); });
+    audio.addEventListener("pause", function () { setPlaying(false); });
+    audio.addEventListener("ended", function () {
+      audio.currentTime = 0;
+      setPlaying(false);
+    });
+
+    players.push(audio);
   });
 })();
