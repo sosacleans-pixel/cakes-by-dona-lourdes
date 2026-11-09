@@ -718,6 +718,94 @@ a {
   color: var(--wine);
 }
 
+.section-song {
+  text-align: center;
+}
+
+.song-inner {
+  width: min(36rem, calc(100% - 3rem));
+}
+
+.song-inner .eyebrow {
+  justify-content: center;
+}
+
+.song-inner h2 {
+  margin-bottom: 1rem;
+}
+
+.song-inner p {
+  margin-inline: auto;
+  max-width: 34rem;
+}
+
+.verse {
+  margin: 1.75rem auto 0;
+  max-width: 22rem;
+  padding: 1.35rem 1.25rem 1.2rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 252, 247, 0.45);
+}
+
+.verse p {
+  margin: 0;
+  max-width: none;
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.35rem, 2.5vw, 1.7rem);
+  line-height: 1.55;
+  color: var(--wine-deep);
+}
+
+.song-note {
+  margin: 0.85rem auto 0;
+  max-width: 32rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.song-play {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  margin: 1.35rem auto 0;
+  min-height: 3rem;
+  padding: 0.7rem 1.15rem;
+  border: 1px solid var(--wine);
+  background: transparent;
+  color: var(--wine);
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+}
+
+.song-play:hover {
+  background: var(--wine);
+  color: var(--cream);
+}
+
+.song-play-mark {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 10px;
+  border-color: transparent transparent transparent currentColor;
+}
+
+.song-play.is-playing .song-play-mark {
+  width: 10px;
+  height: 12px;
+  border: 0;
+  background:
+    linear-gradient(currentColor, currentColor) left center / 3px 100% no-repeat,
+    linear-gradient(currentColor, currentColor) right center / 3px 100% no-repeat;
+}
+
 .reserve {
   background:
     radial-gradient(ellipse at 50% 0%, rgba(212, 181, 122, 0.14), transparent 55%),
@@ -884,7 +972,8 @@ html[lang="es"] .section-how h2 {
 @media (max-width: 560px) {
   .wrap,
   .glance ul,
-  .story-inner {
+  .story-inner,
+  .song-inner {
     width: min(1120px, calc(100% - 2rem));
   }
 
