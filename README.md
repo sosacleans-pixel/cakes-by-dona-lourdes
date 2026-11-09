@@ -1,6 +1,6 @@
-# Cakes by Doña Lourdes
+# Cakes by Lourdes
 
-Static one-page website for Cakes by Doña Lourdes, a homemade, special-order Dominican cake brand. Delivery and shipping only. No storefront. One cake: a media libra bizcocho that arrives fully assembled in a lidded gold tin.
+Static one-page website for Cakes by Lourdes, a homemade, special-order Dominican cake brand. Delivery and shipping only. No storefront. One cake: a media libra bizcocho that arrives fully assembled in a lidded gold tin.
 
 Custom domain: https://cakesbylourdes.salimheyaime.com
 
