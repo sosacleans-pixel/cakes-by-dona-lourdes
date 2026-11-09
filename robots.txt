@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cakesbydonalourdes.salimheyaime.com/sitemap.xml
