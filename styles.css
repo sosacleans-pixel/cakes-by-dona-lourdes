@@ -249,7 +249,8 @@ a {
   display: flex;
   align-items: baseline;
   gap: 0.28rem;
-  margin-bottom: 0.12rem;
+  margin-top: 0.08rem;
+  margin-bottom: 0;
   color: var(--wine);
   white-space: nowrap;
 }
@@ -274,6 +275,7 @@ a {
 .brand-name {
   font-family: var(--serif);
   font-size: 1.35rem;
+  line-height: 1;
   color: var(--ink);
 }
 
@@ -350,7 +352,7 @@ a {
   display: flex;
   align-items: baseline;
   gap: 0.45rem;
-  margin: 0 0 0.28rem;
+  margin: 0.15rem 0 0;
   color: var(--wine);
 }
 
@@ -375,7 +377,7 @@ a {
   display: block;
   font-weight: 500;
   font-size: clamp(4.4rem, 8vw, 7.15rem);
-  line-height: 0.92;
+  line-height: 1;
   letter-spacing: -0.035em;
 }
 
