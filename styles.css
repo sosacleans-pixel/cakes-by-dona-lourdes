@@ -711,6 +711,23 @@ a {
   font-size: 1.12rem;
 }
 
+.story-inner p.story-facebook {
+  margin: 1.35rem 0 0;
+  font-size: 0.98rem;
+}
+
+.story-facebook a {
+  color: var(--wine);
+  text-underline-offset: 0.18em;
+}
+
+.fb-icon {
+  width: 0.72rem;
+  height: 0.72rem;
+  margin-right: 0.45rem;
+  vertical-align: -0.05em;
+}
+
 .story-es {
   margin-bottom: 0;
   font-family: var(--serif);
@@ -924,6 +941,33 @@ a {
   font-style: italic;
   font-size: 1.15rem;
   color: var(--ink);
+}
+
+.footer-social {
+  margin: 0 0 1.25rem;
+}
+
+.footer-facebook {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.45rem;
+  height: 2.45rem;
+  border: 1px solid var(--gold-line);
+  border-radius: 50%;
+  color: var(--wine);
+  text-decoration: none;
+}
+
+.footer-facebook:hover {
+  background: var(--wine);
+  border-color: var(--wine);
+  color: var(--cream);
+}
+
+.footer-facebook svg {
+  width: 0.85rem;
+  height: 0.85rem;
 }
 
 .legal {
