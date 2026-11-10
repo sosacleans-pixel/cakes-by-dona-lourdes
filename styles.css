@@ -338,7 +338,21 @@ a {
 }
 
 .hero {
-  padding: clamp(2.75rem, 6vw, 5.25rem) 0 clamp(3rem, 6vw, 5rem);
+  padding: clamp(1.6rem, 3.5vw, 2.75rem) 0 clamp(3rem, 6vw, 5rem);
+}
+
+.hero-logo {
+  width: clamp(11.5rem, 52vw, 20rem);
+  margin: 0 auto clamp(1.15rem, 2.6vw, 1.85rem);
+}
+
+.hero-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 16px 36px rgba(61, 18, 28, 0.16);
 }
 
 .hero-grid {
